@@ -25,11 +25,15 @@ The main challenges were:
 
 ### Screenshot
 
-![]()
+![screenshot_advice](https://github.com/WalkerAlfaro/advice-generator-app-main/blob/main/screenshots/advice.png)
+
+![screenshot_glow](https://github.com/WalkerAlfaro/advice-generator-app-main/blob/main/screenshots/glow.png)
+
+![screenshot_phone](https://github.com/WalkerAlfaro/advice-generator-app-main/blob/main/screenshots/phone.png)
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://walkeralfaro.github.io/advice-generator-app-main/)
 
 ## My process
 
