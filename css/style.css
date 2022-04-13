@@ -1,0 +1,127 @@
+:root {
+  /* NEUTRAL COLORS */
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  /* PRIMARY COLORS */
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  /* FONT */
+  --Font: "Manrope", sans-serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Permite que un REM sea equivalente a 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--DarkBlue);
+  font-family: var(--Font);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.flex {
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 55rem;
+  height: 35rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  background-color: var(--DarkGrayishBlue);
+  position: relative;
+  max-width: 90%;
+}
+
+.advice__title,
+.advice__text {
+  text-align: center;
+}
+
+/* TITLE */
+.advice__title {
+  color: var(--NeonGreen);
+  letter-spacing: 0.4rem;
+}
+
+/* TEXT */
+.advice__text {
+  width: 100%;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advice__text p {
+  color: var(--LightCyan);
+  font-size: 2.8rem;
+}
+
+/* DIVIDER */
+.advice__divider {
+  display: flex;
+  justify-content: center;
+}
+
+/* BUTTON */
+.advice__button button {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 32rem;
+  background-color: var(--NeonGreen);
+}
+
+.advice__button {
+  display: flex;
+  justify-content: center;
+}
+
+.advice__button button:hover {
+  box-shadow: 0 0 10px var(--NeonGreen), 0 0 40px var(--NeonGreen),
+    0 0 80px var(--NeonGreen);
+  cursor: pointer;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  height: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--LightCyan);
+}
+
+.attribution a {
+  color: var(--NeonGreen);
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 520px) {
+  .advice__divider img {
+    content: url(images/pattern-divider-mobile.svg);
+  }
+
+  .advice__text p {
+    font-size: 2.4rem;
+  }
+}
