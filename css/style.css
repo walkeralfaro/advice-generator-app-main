@@ -118,7 +118,7 @@ body {
 /* MEDIA QUERIES */
 @media (max-width: 520px) {
   .advice__divider img {
-    content: url(/images/pattern-divider-mobile.svg);
+    content: url(images/pattern-divider-mobile.svg);
   }
 
   .advice__text p {
