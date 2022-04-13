@@ -79,6 +79,10 @@ body {
   justify-content: center;
 }
 
+.advice__divider--mobile {
+  display: none;
+}
+
 /* BUTTON */
 .advice__button button {
   width: 6rem;
@@ -117,8 +121,12 @@ body {
 
 /* MEDIA QUERIES */
 @media (max-width: 520px) {
-  .advice__divider img {
-    content: url(images/pattern-divider-mobile.svg);
+  .advice__divider--desktop {
+    display: none;
+  }
+
+  .advice__divider--mobile {
+    display: block;
   }
 
   .advice__text p {
